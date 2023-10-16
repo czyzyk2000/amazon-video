@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h2>Hello Amazon Video</h2>
+        <h2>Hello Amazon Video zmiana </h2>
       </div>
     </>
   );
