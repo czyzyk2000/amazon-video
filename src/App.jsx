@@ -1,15 +1,18 @@
-import { useState } from "react";
+import { BroowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div className="App">
-        <h2>Hello Amazon Video zmiana </h2>
-      </div>
-    </>
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <h1>test</h1>
+            <Login />
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 }
 
