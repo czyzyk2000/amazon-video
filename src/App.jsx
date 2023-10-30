@@ -1,21 +1,26 @@
-import { BroowserRouter as Router, Switch, Route } from "react-router-dom";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Details from "./components/Details";
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Router>
+        <Header />
         <Switch>
-          <Route exact path="/">
-            <h1>test</h1>
-            <h2>test2</h2>
-            <h3>test3</h3>
-            <Login />
+          <Route path="detail">
+            <Detail />
+          </Route>
+          <Route path="/">
+            <Home />
           </Route>
         </Switch>
       </Router>
+      <Home />
     </div>
   );
-}
+};
 
 export default App;
