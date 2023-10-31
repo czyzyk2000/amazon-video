@@ -3,16 +3,21 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
 import Movies from "./Movies";
-import Details from "./Details";
+import Header from "./Header";
+import News from "./News";
 
 function Home() {
   return (
-    <Container>
-      <ImgSlider />
-      <Viewers />
-      <Movies />
-      <Details />
-    </Container>
+    <Content>
+      <Header />
+
+      <Container>
+        <ImgSlider />
+        <Viewers />
+        <Movies />
+        <News />
+      </Container>
+    </Content>
   );
 }
 
@@ -36,3 +41,4 @@ const Container = styled.main`
     z-index: -1;
   }
 `;
+const Content = styled.div``;
